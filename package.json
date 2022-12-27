@@ -1,7 +1,19 @@
 {
-  "name": "phonegigs-backend",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Sushant Garudkar <garudkar.sa@gmail.com>",
-  "license": "MIT"
+	"name": "phonegigs-backend",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "Sushant Garudkar <garudkar.sa@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"express-validator": "^6.14.2",
+		"firebase-admin": "^11.4.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20"
+	}
 }

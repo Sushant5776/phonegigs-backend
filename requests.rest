@@ -1,0 +1,15 @@
+GET http://localhost:3000/product
+
+###
+
+GET http://localhost:3000/product/TX1rSsjamfejvS5X9GpS
+
+###
+
+PATCH http://localhost:3000/product/TX1rSsjamfejvS5X9GpS
+Content-Type: application/json
+
+{
+	"quantity": 10,
+	"make": "Samsung"
+}
