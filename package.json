@@ -1,0 +1,7 @@
+{
+  "name": "phonegigs-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sushant Garudkar <garudkar.sa@gmail.com>",
+  "license": "MIT"
+}
