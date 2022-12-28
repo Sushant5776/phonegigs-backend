@@ -5,7 +5,8 @@
 	"author": "Sushant Garudkar <garudkar.sa@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"start": "node index.js"
+		"start": "node index.js",
+		"dev": "nodemon index.js"
 	},
 	"dependencies": {
 		"dotenv": "^16.0.3",
