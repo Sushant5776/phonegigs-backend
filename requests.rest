@@ -1,13 +1,16 @@
 GET http://localhost:3000/product
+Origin: https://phonegigs.com
 
 ###
 
-GET http://localhost:3000/product/TX1rSsjamfejvS5X9GpS
+GET http://localhost:3000/product/zw8Jb2dB96oczQIotu0B
+Origin: https://phonegigs.com
 
 ###
 
 POST http://localhost:3000/product
 Content-Type: application/json
+Origin: https://phonegigs.com
 
 {
 	"quantity":10,
@@ -20,8 +23,9 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:3000/product/TX1rSsjamfejvS5X9GpS
+PATCH http://localhost:3000/product/zw8Jb2dB96oczQIotu0B
 Content-Type: application/json
+Origin: https://phonegigs.com
 
 {
 	"quantity": 10,
@@ -30,4 +34,15 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/product/TX1rSsjamfejvS5X9GpS
+DELETE http://localhost:3000/product/zw8Jb2dB96oczQIotu0B
+
+### Auth
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+Origin: https://phonegigs.com
+
+{
+	"username": "Alison Alexandra 8",
+	"password": "test1234"
+}

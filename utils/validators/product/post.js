@@ -1,6 +1,6 @@
 const { check } = require('express-validator')
 
-const postProductValidator = [
+const validator = [
 	check('image').trim().isURL(),
 	check('price').isInt({ min: 0 }),
 	check('quantity').isInt({ min: 0 }),
@@ -9,4 +9,4 @@ const postProductValidator = [
 	check('name').trim().isString().isLength({ min: 1 })
 ]
 
-module.exports = postProductValidator
+module.exports = validator

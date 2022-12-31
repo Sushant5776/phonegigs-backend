@@ -1,6 +1,6 @@
 const { check } = require('express-validator')
 
-const patchProductValidator = [
+const validator = [
 	check('image').optional().trim().isURL(),
 	check('price').optional().isInt({ min: 0 }),
 	check('quantity').optional().isInt({ min: 0 }),
@@ -9,4 +9,4 @@ const patchProductValidator = [
 	check('name').optional().trim().isString().isLength({ min: 1 })
 ]
 
-module.exports = patchProductValidator
+module.exports = validator
