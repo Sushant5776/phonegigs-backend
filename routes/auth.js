@@ -6,7 +6,7 @@ const logoutValidator = require('../utils/validators/auth/logout')
 const router = express.Router()
 
 router.post('/register', registerLoginValidator, controllers.auth_register)
-router.post('/login', registerLoginValidator, controllers.auth_login)
-router.post('/logout', logoutValidator, controllers.auth_logout)
+router.post('/sign_in', registerLoginValidator, controllers.auth_login)
+router.post('/sign_out', logoutValidator, controllers.auth_logout)
 
 module.exports = router
