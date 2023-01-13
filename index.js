@@ -8,7 +8,7 @@ dotenv.config({ path: '.env.local' })
 
 app = express()
 
-app.use(cors({ origin: 'http://localhost:3000', methods: [ 'GET', 'POST', 'PUT', 'DELETE' ] }))
+app.use(cors({ origin: 'http://localhost:3000' }))
 app.use(express.json())
 
 app.use('/auth', authRouter)
