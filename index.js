@@ -1,5 +1,6 @@
 const express = require('express')
 const dotenv = require('dotenv')
+const cors = require('cors')
 const productRouter = require('./routes/product')
 const authRouter = require('./routes/auth')
 
@@ -7,6 +8,7 @@ dotenv.config({ path: '.env.local' })
 
 app = express()
 
+app.use(cors({ origin: 'http://localhost:3000', methods: [ 'GET', 'POST', 'PUT', 'DELETE' ] }))
 app.use(express.json())
 
 app.use('/auth', authRouter)

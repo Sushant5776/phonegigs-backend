@@ -1,4 +1,4 @@
-const { firebase_firestore } = require('../utils/db')
+const { firebase_firestore } = require('../../utils/db')
 const { validationResult } = require('express-validator')
 
 const collectionName = 'products'
