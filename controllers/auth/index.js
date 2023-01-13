@@ -19,8 +19,7 @@ async function auth_register(req, res) {
 
 	await userReference.ref.create({ username, password: hashedPassword, create_timestamp: timestamp, update_timestamp: timestamp })
 
-	res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000')
-	return res.redirect(req.headers.origin + '/login')
+	return res.sendStatus(200)
 }
 
 // async function auth_login(req, res) {
